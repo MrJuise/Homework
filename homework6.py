@@ -10,9 +10,8 @@
 '''
 my_dict = {'Anna': 1999, 'Max': 2003, 'Nina': 2010}
 print("Dict:", my_dict)
-my_dict['Roman'] = 1990
-print("Existing value:", my_dict['Nina'])
-print("Existing value:", my_dict['Roman'])
+print("Existing value:", my_dict.get('Nina'))
+print("Not existing value:", my_dict.get('Roman'))
 my_dict.update({'Dima': 1975,
                 'Aramis': 1789})
 a = my_dict.pop('Max')
